@@ -1,0 +1,65 @@
+/* Inheriting styles from App.css / index.css mostly, but defining local overrides if needed */
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    width: 100%;
+}
+
+.input-label {
+    font-size: 0.9rem;
+    color: var(--text-secondary);
+    font-weight: 500;
+    margin-left: 0.2rem;
+}
+
+.input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.input-icon {
+    position: absolute;
+    left: 1rem;
+    color: var(--text-tertiary);
+    pointer-events: none;
+    transition: color 0.2s ease;
+}
+
+.modern-input {
+    width: 100%;
+    padding: 0.8rem 1rem 0.8rem 2.8rem;
+    /* Space for icon */
+    border-radius: 12px;
+    border: 2px solid var(--border-color);
+    background: var(--surface);
+    color: var(--text-primary);
+    font-size: 1rem;
+    transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modern-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    box-shadow: 0 0 0 4px var(--primary-light);
+}
+
+.input-wrapper:focus-within .input-icon {
+    color: var(--primary);
+}
+
+.modern-input.error {
+    border-color: var(--error);
+}
+
+.modern-input.error:focus {
+    box-shadow: 0 0 0 4px rgba(239, 68, 68, 0.1);
+}
+
+.input-error-message {
+    color: var(--error);
+    font-size: 0.8rem;
+    margin-left: 0.2rem;
+}

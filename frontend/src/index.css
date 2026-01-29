@@ -1,0 +1,73 @@
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Custom Design System Variables */
+  --primary: #0ea5e9;
+  /* Sky 500 */
+  --primary-light: #e0f2fe;
+  /* Sky 100 */
+  --primary-dark: #0284c7;
+  /* Sky 600 */
+  --primary-hover: #0369a1;
+  /* Sky 700 */
+
+  --bg-primary: #f0f2f5;
+  --bg-secondary: #ffffff;
+
+  --surface: #ffffff;
+  --surface-hover: #f8fafc;
+
+  --text-primary: #1e293b;
+  /* Slate 800 */
+  --text-secondary: #64748b;
+  /* Slate 500 */
+  --text-tertiary: #94a3b8;
+  /* Slate 400 */
+  --text-muted: #94a3b8;
+
+  --border-color: #e2e8f0;
+  /* Slate 200 */
+  --shadow-color: rgba(0, 0, 0, 0.05);
+
+  --error: #ef4444;
+  /* Red 500 */
+  --success: #10b981;
+  /* Emerald 500 */
+
+  /* Glassmorphism Variables */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.5);
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+
+  /* Background with image fallback to gradient */
+  background: linear-gradient(135deg, rgba(224, 242, 254, 0.9) 0%, rgba(240, 249, 255, 0.9) 100%), url('./assets/bg.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+  color: var(--text-primary);
+}
+
+/* Reset buttons and inputs */
+button {
+  font-family: inherit;
+}
